@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: rhtas-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rhtas-operator
+    app.kubernetes.io/part-of: operator
+  name: rhtas-operators41i
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: rhtas-operator
+    weight: 100
+status: {}
