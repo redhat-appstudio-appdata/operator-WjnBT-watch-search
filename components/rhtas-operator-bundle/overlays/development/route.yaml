@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: rhtas-operator-bundle
     app.kubernetes.io/part-of: operator
-  name: rhtas-operator-bundleoh6h
+  name: rhtas-operator-bundleo8og
 spec:
   port:
     targetPort: 8080
